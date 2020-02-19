@@ -420,18 +420,10 @@ class FemiwikiTemplate extends BaseTemplate {
 	 * @return string html
 	 */
 	private function getUserLinks() {
-		$personalTools = $this->getPersonalTools();
-
-		// Remove default alert and notice
-		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) ) {
-			unset( $personalTools['notifications-alert'] );
-			unset( $personalTools['notifications-notice'] );
-		}
-
 		return $this->getPortlet( [
 			'id' => 'p-personal',
 			'headerMessage' => 'personaltools',
-			'content' => $personalTools,
+			'content' => $this->getPersonalTools(),
 		] );
 	}
 

@@ -225,15 +225,16 @@
     display: none;
   }
 
+  #pt-userpage,
+  #pt-notifications-alert,
+  #pt-notifications-notice {
+    display: inline-block;
+  }
+
   .mw-echo-notifications-badge {
-    width: auto;
-    height: auto;
-    margin: auto;
-    top: auto;
+    top: 0;
     cursor: pointer;
     line-height: unset;
-    /* Disable background icon and counter */
-    background: none;
 
     &.mw-echo-notifications-badge-all-read {
       opacity: unset;

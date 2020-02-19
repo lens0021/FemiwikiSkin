@@ -86,8 +86,7 @@
   },
   "Hooks": {
     "UserMailerTransformContent": "SkinFemiwikiHooks::onUserMailerTransformContent",
-    "ResourceLoaderGetConfigVars": "SkinFemiwikiHooks::onResourceLoaderGetConfigVars",
-    "PersonalUrls": "SkinFemiwikiHooks::onPersonalUrls"
+    "ResourceLoaderGetConfigVars": "SkinFemiwikiHooks::onResourceLoaderGetConfigVars"
   },
   "config": {
     "FemiwikiFirebaseKey": "",
