@@ -89,6 +89,7 @@
       "+mediawiki.special": "resources/skins.femiwiki.moduleSkinStyles/special.less",
       "+mediawiki.special.changeslist": "resources/skins.femiwiki.moduleSkinStyles/changeslist.less",
       "+mediawiki.special.search": "resources/skins.femiwiki.moduleSkinStyles/search.less",
+      "+mediawiki.pulsatingdot": "resources/skins.femiwiki.moduleSkinStyles/mediawiki.pulsatingdot.less",
       "+oojs-ui-core.styles": "resources/skins.femiwiki.moduleSkinStyles/ooui.less",
       "+ext.CodeMirror.mode.mediawiki": "resources/skins.femiwiki.moduleSkinStyles/codeMirror.less",
       "+ext.CollaborationKit.hub.styles": "resources/skins.femiwiki.moduleSkinStyles/collaborationKit.hub.less",
