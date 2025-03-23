@@ -6,8 +6,6 @@ Femiwiki skin is a skin for [MediaWiki].
 
 If you are interested in contributing to the code base, please see the document [How to Contribute].
 
-&nbsp;
-
 ---
 
 The source code of _femiwiki/skin_ is primarily distributed under the terms
