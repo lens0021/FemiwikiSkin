@@ -1,6 +1,6 @@
 {
   "name": "Femiwiki",
-  "version": "1.3.5",
+  "version": "1.0.3",
   "author": "[https://femiwiki.com/ Femiwiki Team]",
   "url": "https://github.com/femiwiki/FemiwikiSkin",
   "descriptionmsg": "femiwiki-desc",
@@ -14,7 +14,9 @@
     "femiwiki": "Femiwiki"
   },
   "MessagesDirs": {
-    "Femiwiki": ["i18n"]
+    "Femiwiki": [
+      "i18n"
+    ]
   },
   "AutoloadClasses": {
     "FemiwikiSkin\\Constants": "includes/Constants.php",
@@ -27,8 +29,14 @@
   "ResourceModules": {
     "skins.femiwiki": {
       "class": "FemiwikiResourceLoaderSkinModule",
-      "features": ["normalize", "legacy"],
-      "targets": ["desktop", "mobile"],
+      "features": [
+        "normalize",
+        "legacy"
+      ],
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
       "position": "top",
       "styles": [
         "skins.femiwiki/elements.less",
@@ -40,7 +48,10 @@
     },
     "skins.femiwiki.xeicon": {
       "class": "ResourceLoaderSkinModule",
-      "targets": ["desktop", "mobile"],
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
       "position": "top",
       "localBasePath": "node_modules/xeicon",
       "remoteSkinPath": "Femiwiki/node_modules/xeicon",
@@ -51,32 +62,65 @@
       }
     },
     "skins.femiwiki.js": {
-      "targets": ["desktop", "mobile"],
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
       "packageFiles": [
         "skins.femiwiki.js/skin.js",
         "skins.femiwiki.js/notificationBadge.js",
         "skins.femiwiki.js/searchClearButton.js"
       ],
-      "dependencies": ["oojs", "oojs-ui-core", "mediawiki.page.ready"]
+      "dependencies": [
+        "oojs",
+        "oojs-ui-core",
+        "mediawiki.page.ready"
+      ]
     },
     "skins.femiwiki.notifications": {
-      "targets": ["desktop", "mobile"],
-
-      "packageFiles": ["skins.femiwiki.notifications/init.js"]
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
+      "packageFiles": [
+        "skins.femiwiki.notifications/init.js"
+      ]
     },
     "skins.femiwiki.dm": {
-      "targets": ["desktop", "mobile"],
-      "scripts": ["mw.fw.js"]
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
+      "scripts": [
+        "mw.fw.js"
+      ]
     },
     "skins.femiwiki.share": {
-      "targets": ["desktop", "mobile"],
-      "packageFiles": ["skins.femiwiki.share/init.js"],
-      "dependencies": ["oojs", "oojs-ui-windows"]
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
+      "packageFiles": [
+        "skins.femiwiki.share/init.js"
+      ],
+      "dependencies": [
+        "oojs",
+        "oojs-ui-windows"
+      ]
     },
     "skins.femiwiki.share.ui": {
-      "targets": ["desktop", "mobile"],
-      "scripts": ["skins.femiwiki.share.ui/mw.fw.ShareDialog.js"],
-      "dependencies": ["skins.femiwiki.dm", "oojs", "oojs-ui-windows"],
+      "targets": [
+        "desktop",
+        "mobile"
+      ],
+      "scripts": [
+        "skins.femiwiki.share.ui/mw.fw.ShareDialog.js"
+      ],
+      "dependencies": [
+        "skins.femiwiki.dm",
+        "oojs",
+        "oojs-ui-windows"
+      ],
       "messages": [
         "skin-femiwiki-share-dismiss",
         "skin-femiwiki-share-facebook",
@@ -84,9 +128,15 @@
       ]
     },
     "skins.femiwiki.mobile.js": {
-      "packageFiles": ["skins.femiwiki.mobile/init.js"],
-      "targets": ["mobile"],
-      "dependencies": ["mediawiki.user"],
+      "packageFiles": [
+        "skins.femiwiki.mobile/init.js"
+      ],
+      "targets": [
+        "mobile"
+      ],
+      "dependencies": [
+        "mediawiki.user"
+      ],
       "messages": [
         "skin-femiwiki-desktop-switch-confirm",
         "skin-femiwiki-desktop-switch-canceled"
@@ -148,11 +198,21 @@
     "UserMailerTransformContent": "SkinFemiwikiHooks::onUserMailerTransformContent"
   },
   "config": {
-    "FemiwikiFirebaseKey": { "value": "" },
-    "FemiwikiFacebookAppId": { "value": "" },
-    "FemiwikiTwitterAccount": { "value": false },
-    "FemiwikiHeadItems": { "value": false },
-    "FemiwikiAddThisId": { "value": false }
+    "FemiwikiFirebaseKey": {
+      "value": ""
+    },
+    "FemiwikiFacebookAppId": {
+      "value": ""
+    },
+    "FemiwikiTwitterAccount": {
+      "value": false
+    },
+    "FemiwikiHeadItems": {
+      "value": false
+    },
+    "FemiwikiAddThisId": {
+      "value": false
+    }
   },
   "OOUIThemePaths": {
     "Femiwiki": {
