@@ -33,6 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - run: npm install
+        if: matrix.stage == 'phpunit' || matrix.stage == 'selenium'
+
       - uses: lens0021/quibble-action@main
         id: quibble
         with:
