@@ -11,23 +11,9 @@ jobs:
       fail-fast: false
       matrix:
         mediawiki-version:
-          - REL1_43
-          - REL1_44
           - REL1_45
-          - REL1_46
-          - master
         stage:
-          - phan
-          # - coverage # We really need this coverage for a skin?
-          - phpunit-unit
-          - phpunit
-          - phpunit-parallel
-          - phpunit-standalone
-          - npm-test
           - composer-test
-          - selenium
-          # - qunit
-          # - api-testing
 
     runs-on: ubuntu-latest
 
@@ -43,7 +29,7 @@ jobs:
       - run: npm install
         if: matrix.stage == 'phpunit' || matrix.stage == 'selenium'
 
-      - uses: femiwiki/quibble-action@f485e3d07409f1524adfb26d12d22830b6b39b06 # main
+      - uses: femiwiki/quibble-action@1250a9e566edc79ab649480e7bc3b499aa6e7659 # phpcs-annotations test
         id: quibble
         with:
           stage: ${{ matrix.stage }}
